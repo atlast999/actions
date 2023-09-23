@@ -38,13 +38,14 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu'
-          
       - name: Check java installation 
         run: java -version
-
-
-
-
+      
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
+      
+      - name: Check gradle version
+        run: gradle -version
 
 
 
