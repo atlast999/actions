@@ -48,7 +48,7 @@ jobs:
         run: gradle -version
 
       - name: Testing secret
-        run: echo ${{ secrets.SuperSecret }}
+        run: echo ${{ secrets.TEST_SECRET_KEY }}
 
 
         
