@@ -47,6 +47,8 @@ jobs:
       - name: Check gradle version
         run: gradle -version
 
+      - name: Testing secret
+        run: echo ${{ secrets.SuperSecret }}
 
 
         
